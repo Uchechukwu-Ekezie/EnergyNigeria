@@ -8,6 +8,8 @@ import GainInsight from "../Components/GainInsight/GainInsight";
 import WhyExhibit from "../Components/WhyExhibit/WhyExhibit";
 import VisitorTestimony from "../Components/VisitorTest/VisitorTestimony";
 import VideoSection from "../Components/VideoSection/VideoSection";
+import RegistrationCards from "../Components/Registration/RegistrationCards";
+import Slideshow from "../Components/SlideShow/Slideshow";
 
 function Home() {
   return (
@@ -17,8 +19,10 @@ function Home() {
         <HeroOne />
         <HeroTwo />
         <Speakers />
+        <RegistrationCards/>
         <VisitorTestimony />
         <WhyExhibit />
+        <Slideshow/>
         <VideoSection/>
         <GainInsight />
         <One />
