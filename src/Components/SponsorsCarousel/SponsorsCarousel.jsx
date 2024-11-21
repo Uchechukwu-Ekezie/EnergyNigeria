@@ -60,16 +60,16 @@ const ExhibitorsCarousel = () => {
   }, []);
 
   return (
-    <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh]">
-      <div className="max-w-5xl mt-6 mx-auto overflow-hidden px-4 relative">
-        <h2 className="text-center text-red-500 mb-4 font-bold text-lg md:text-xl">
-        SPONSORS FOR 2023
+    <div className="relative h-[13vh]  md:h-[15vh] lg:h-[20vh]">
+      <div className="relative max-w-5xl px-4 mx-auto mt-6 overflow-hidden">
+        <h2 className="mb-4 text-lg font-bold text-center text-red-500 md:text-xl">
+          FEATURED EXHIBITORS 2024
         </h2>
 
         {/* Left Arrow */}
         <button
           onClick={scrollPrev}
-          className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 text-black z-10"
+          className="absolute z-10 text-black transform -translate-y-1/2 left-2 md:left-4 top-1/2"
         >
           <FaChevronLeft className="text-5xl md:text-6xl lg:text-7xl" />
         </button>
@@ -88,7 +88,7 @@ const ExhibitorsCarousel = () => {
           {exhibitors.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex items-center justify-center"
+              className="flex items-center justify-center flex-shrink-0"
               style={{
                 minWidth: "100%", // Take full width for one item per view
               }}
@@ -96,7 +96,7 @@ const ExhibitorsCarousel = () => {
               <img
                 src={item.logo}
                 alt={item.name}
-                className="h-16 md:h-20 lg:h-24 mx-auto object-contain"
+                className="object-contain h-16 mx-auto md:h-20 lg:h-24"
               />
             </div>
           ))}
@@ -105,7 +105,7 @@ const ExhibitorsCarousel = () => {
         {/* Right Arrow */}
         <button
           onClick={scrollNext}
-          className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 text-black z-10"
+          className="absolute z-10 text-black transform -translate-y-1/2 right-2 md:right-4 top-1/2"
         >
           <FaChevronRight className="text-5xl md:text-6xl lg:text-7xl" />
         </button>
