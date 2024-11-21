@@ -1,86 +1,84 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import slideshow1 from "../../Assets/img/slideshow/slideshow1.png"; // Replace with your actual image path
 
-const Slideshow = () => {
-  const slides = [
-    {
-      image: "/path/to/image1.jpg",
-      content: (
-        <>
-          <p className="font-bold text-pink-600">
-            The{" "}
-            <span className="text-red-500">
-              10<sup>th</sup> anniversary edition
-            </span>{" "}
-            of Nigeria Energy, held under the patronage of{" "}
-            <span className="font-semibold">Federal Ministry of Power</span>, 
-            was inaugurated by Chief Adebayo Adelabu, Honourable Minister of Power, 
-            Federal Republic of Nigeria.
-          </p>
-        </>
-      ),
-    },
-    { image: "/path/to/image2.jpg", content: <p>Content for slide 2</p> },
-    { image: "/path/to/image3.jpg", content: <p>Content for slide 3</p> },
-    { image: "/path/to/image4.jpg", content: <p>Content for slide 4</p> },
-    { image: "/path/to/image5.jpg", content: <p>Content for slide 5</p> },
-    { image: "/path/to/image6.jpg", content: <p>Content for slide 6</p> },
-    { image: "/path/to/image7.jpg", content: <p>Content for slide 7</p> },
-    { image: "/path/to/image8.jpg", content: <p>Content for slide 8</p> },
-    { image: "/path/to/image9.jpg", content: <p>Content for slide 9</p> },
-    { image: "/path/to/image10.jpg", content: <p>Content for slide 10</p> },
+// Slideshow Component
+const SlideshowCard = () => {
+  const images = [
+    { name: "Slide show 1", logo: slideshow1 },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const intervalRef = useRef(null);
+
+  const startSlideshow = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change every 5 seconds
+  };
+
+  const stopSlideshow = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
+    startSlideshow();
+    return () => stopSlideshow();
+  }, [images.length]);
 
   return (
-    <div className="py-10 bg-gray-100">
-      <div className="grid items-center max-w-6xl grid-cols-1 gap-6 mx-auto md:grid-cols-2">
-        {/* Image Section */}
-        <div className="relative">
-          {slides.map((slide, index) => (
-            <img
-              key={index}
-              src={slide.image}
-              alt={`Slide ${index + 1}`}
-              className={`w-full rounded-lg shadow-md transition-opacity duration-700 ${
-                index === currentSlide ? "opacity-100" : "opacity-0 absolute"
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Content Section */}
-        <div className="p-4 bg-white rounded-lg shadow-md">
-          <h2 className="mb-4 text-2xl font-bold text-gray-800">
-            2023 Show Highlights
-          </h2>
-          <div className="text-gray-700">{slides[currentSlide].content}</div>
-        </div>
-      </div>
-
-      {/* Dots for Navigation */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide
-                ? "bg-pink-600 scale-125"
-                : "bg-gray-300"
-            }`}
-          ></button>
-        ))}
+    <div className="w-full sm:w-1/2 flex items-start justify-center p-4">
+      <div className="rounded-md overflow-hidden shadow-md">
+        <img
+          src={images[currentImageIndex].logo}
+          alt={images[currentImageIndex].name}
+          className="w-full h-auto object-cover"
+        />
       </div>
     </div>
   );
 };
 
-export default Slideshow;
+// Static Text Card Component
+const TextCard = () => {
+  return (
+    <div className="w-full sm:w-1/2 bg-white shadow-md rounded-md p-6 sm:p-10 text-left flex flex-col justify-between">
+      <h3 className="text-3xl font-bold text-gray-800 mb-4">
+        2023 Show Highlights
+      </h3>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        The <span className="font-bold">10th anniversary</span> edition of
+        Nigeria Energy, held under the patronage of the{" "}
+        <span className="font-bold">Federal Ministry of Power, Nigeria</span>,
+        was inaugurated by Chief Adebayo Adelabu, Honourable Minister of Power,
+        Federal Republic of Nigeria.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Nigeria Energy 2023 featured 3 days of engaging discussions and
+        networking connecting over <span className="font-bold">6,500+</span>{" "}
+        local and international energy stakeholders from across the power value
+        chain.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Enabling charting pathways to energy efficiency and sufficiency in West
+        Africa, the conference discussed real-life solutions and actionable
+        recommendations.
+      </p>
+    </div>
+  );
+};
+
+// TwoCards Component
+const TwoCards = () => {
+  return (
+    <div className="bg-gray-100 py-12 px-6 flex flex-col sm:flex-row items-stretch gap-6 sm:gap-12">
+      <SlideshowCard />
+      <TextCard />
+    </div>
+  );
+};
+
+export default TwoCards;
