@@ -35,11 +35,11 @@ const RegistrationCards = () => {
 
   return (
     <div className="w-full bg-gray-50">
-      <div className="flex flex-col justify-center gap-6 md:flex-row w-[60%] mx-auto p-5">
+      <div className="flex flex-col justify-center gap-6 md:flex-row lg:w-[60%] mx-auto p-5">
         {registrations.map((registration, index) => (
           <div
             key={index}
-            className={`w-full md:w-1/2 ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6 h-[50vh]`}
+            className={`w-full md:w-1/2 ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6 lg:h-[50vh]`}
           >
             <h3
               className={`text-lg font-bold ${registration.textColor} text-center uppercase`}
