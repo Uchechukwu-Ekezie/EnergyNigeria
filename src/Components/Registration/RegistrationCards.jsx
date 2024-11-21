@@ -34,12 +34,12 @@ const RegistrationCards = () => {
   ];
 
   return (
-    <div className="px-5 py-10 bg-gray-50">
-      <div className="flex flex-col justify-center gap-6 md:flex-row">
+    <div className="w-full bg-gray-50">
+      <div className="flex flex-col justify-center gap-6 md:flex-row w-[60%] mx-auto p-5">
         {registrations.map((registration, index) => (
           <div
             key={index}
-            className={`w-full md:w-1/2 ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6`}
+            className={`w-full md:w-1/2 ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6 h-[50vh]`}
           >
             <h3
               className={`text-lg font-bold ${registration.textColor} text-center uppercase`}
@@ -47,7 +47,7 @@ const RegistrationCards = () => {
               {registration.title}
             </h3>
             <p
-              className={`text-3xl font-bold mt-4 ${
+              className={`text-5xl font-bold mt-4 ${
                 registration.title === "Visitor Registration"
                   ? "text-yellow-400"
                   : "text-yellow-500"
@@ -55,10 +55,10 @@ const RegistrationCards = () => {
             >
               {registration.price}
             </p>
-            <p className={`mt-4 text-sm ${registration.textColor} text-center`}>
+            <p className={`mt-4 text-xl font-bold ${registration.textColor} text-center`}>
               {registration.description}
             </p>
-            <ul className="mt-6 space-y-2 text-sm">
+            <ul className="mt-6 space-y-2 text-xl ">
               {registration.benefits.map((benefit, idx) => (
                 <li key={idx} className="flex items-center">
                   <span className="mr-2 text-green-500">✔</span>
