@@ -17,7 +17,7 @@ const VideoSection = () => {
   ];
 
   return (
-    <div className="py-10 bg-[#005911] ">
+    <div className="py-10 bg-[#005911]">
       {/* Video Thumbnails Section */}
       <div className="flex flex-wrap justify-center gap-6">
         {videos.map((video, index) => (
@@ -48,7 +48,7 @@ const VideoSection = () => {
       </div>
 
       {/* Button Section */}
-      <div className="text-center mt-8">
+      <div className="flex justify-center mt-8">
         <button className="flex items-center justify-center px-6 py-3 text-lg font-semibold text-white bg-yellow-500 rounded-md shadow-lg hover:bg-yellow-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
