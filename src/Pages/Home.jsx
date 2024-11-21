@@ -13,6 +13,7 @@ import Slideshow from "../Components/SlideShow/Slideshow";
 import FeatureExhibitor from "../Components/FeatureExibitor/FeatureExhibitor";
 import SponsorsCarousel from "../Components/SponsorsCarousel/SponsorsCarousel"
 import ShowFeature from "../Components/ShowFeature/ShowFeature";
+import ProductSectors from "../Components/ProductSector/Product";
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
         <Speakers />
         <RegistrationCards/>
         <VisitorTestimony />
+        <ProductSectors/>
         <WhyExhibit />
         <Slideshow/>
         <VideoSection/>
