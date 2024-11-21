@@ -10,6 +10,8 @@ import VisitorTestimony from "../Components/VisitorTest/VisitorTestimony";
 import VideoSection from "../Components/VideoSection/VideoSection";
 import RegistrationCards from "../Components/Registration/RegistrationCards";
 import Slideshow from "../Components/SlideShow/Slideshow";
+import FeatureExhibitor from "../Components/FeatureExibitor/FeatureExhibitor";
+import SponsorsCarousel from "../Components/SponsorsCarousel/SponsorsCarousel"
 
 function Home() {
   return (
@@ -18,6 +20,7 @@ function Home() {
       <div className="lg:mt-[-140px]">
         <HeroOne />
         <HeroTwo />
+        <FeatureExhibitor/>
         <Speakers />
         <RegistrationCards/>
         <VisitorTestimony />
@@ -25,6 +28,7 @@ function Home() {
         <Slideshow/>
         <VideoSection/>
         <GainInsight />
+        <SponsorsCarousel/>
         <One />
       </div>
     </div>
