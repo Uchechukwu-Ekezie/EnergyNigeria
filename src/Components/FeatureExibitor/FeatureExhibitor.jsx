@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import { MdArrowBackIosNew } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
+
 
 import extra1 from "../../Assets/img/xtrapower.webp";
 import lucy from "../../Assets/img/lucy-logo.webp";
@@ -33,7 +36,7 @@ const ExhibitorsCarousel = () => {
   const scrollNext = () => {
     const container = containerRef.current;
     container.style.transition = "transform 0.5s ease-in-out";
-    container.style.transform = `translateX(-200px)`;
+    container.style.transform = `translateX(-150px)`;
 
     setTimeout(() => {
       container.style.transition = "none";
@@ -49,7 +52,7 @@ const ExhibitorsCarousel = () => {
       container.lastElementChild,
       container.firstElementChild
     );
-    container.style.transform = `translateX(-200px)`;
+    container.style.transform = `translateX(-150px)`;
 
     setTimeout(() => {
       container.style.transition = "transform 0.5s ease-in-out";
@@ -75,7 +78,7 @@ const ExhibitorsCarousel = () => {
   return (
     <div
       className="relative max-w-5xl mx-auto overflow-hidden"
-      style={{ height: "350px" }} // Adjusted height
+      style={{ height: "300px" }} // Adjusted height
     >
       <h2
         className="text-center text-red-500 mb-6"
@@ -99,11 +102,11 @@ const ExhibitorsCarousel = () => {
           fontWeight: "bold",
         }}
       >
-        &#8249;
+        <MdArrowBackIosNew />
       </button>
 
       <div
-        className="flex items-center space-x-6"
+        className="flex items-center space-x-4" // Adjusted spacing between exhibitors
         ref={containerRef}
         style={{
           display: "flex",
@@ -116,12 +119,13 @@ const ExhibitorsCarousel = () => {
           <div
             key={index}
             className="flex-shrink-0 flex items-center justify-center"
-            style={{ minWidth: "200px" }}
+            style={{ minWidth: "150px" }} // Reduced container size
           >
             <img
               src={item.logo}
               alt={item.name}
-              className="h-24 mx-auto" // Larger image size
+              className="h-16 mx-auto" // Reduced image size
+              style={{ objectFit: "contain" }} // Ensure images are not distorted
             />
           </div>
         ))}
@@ -139,7 +143,7 @@ const ExhibitorsCarousel = () => {
           fontWeight: "bold",
         }}
       >
-        &#8250;
+       <MdArrowForwardIos />
       </button>
     </div>
   );
