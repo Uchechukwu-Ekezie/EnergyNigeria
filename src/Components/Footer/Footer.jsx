@@ -41,7 +41,7 @@ const Footer = () => {
                 href="#"
                 className="transition duration-300 hover:text-yellow-500"
               >
-                Sponsorship Enquiry boring
+                Sponsorship Enquiry 
               </a>
             </li>
             <li>
