@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../Assets/img/Renew Nigeria.jpg";
+import logo from "../../Assets/img/logo.png";
 
 function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,21 +11,21 @@ function Navigation() {
       <div className="w-full px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 py-14">
           {/* Logo Section */}
-          <div className="flex items-center ml-[-80px]">
+          <div className="flex items-center ml-[]">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[180px] w-auto object-contain"
+                className="h-[100px] w-auto object-contain"
               />
             </Link>
           </div>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation Links */}
           <div className="hidden md:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-10 text-l">
-                {/* About Dropdown */}
+                {/* Dropdown for About */}
                 <li
                   className="relative group"
                   onMouseEnter={() => setIsDropdownOpen(true)}
@@ -60,46 +60,18 @@ function Navigation() {
                 </li>
 
                 {/* Other Links */}
-                <li>
-                  <NavLink
-                    to="/exhibit"
-                    className="text-gray-700 transition hover:text-[#005911]"
-                  >
-                    Exhibit
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/visit"
-                    className="text-gray-700 transition hover:text-[#005911]"
-                  >
-                    Visit
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/conference"
-                    className="text-gray-700 transition hover:text-[#005911]"
-                  >
-                    Conference
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/media"
-                    className="text-gray-700 transition hover:text-[#005911]"
-                  >
-                    Media
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/travel"
-                    className="text-gray-700 transition hover:text-[#005911]"
-                  >
-                    Travel
-                  </NavLink>
-                </li>
+                {["Exhibit", "Visit", "Conference", "Media", "Travel"].map(
+                  (link) => (
+                    <li key={link}>
+                      <NavLink
+                        to={`/${link.toLowerCase()}`}
+                        className="text-gray-700 transition hover:text-[#005911]"
+                      >
+                        {link}
+                      </NavLink>
+                    </li>
+                  )
+                )}
               </ul>
             </nav>
           </div>
@@ -108,13 +80,13 @@ function Navigation() {
           <div className="items-center hidden gap-4 md:flex">
             <a
               href="#"
-              className="px-5 py-2 font-medium text-[#005911] transition border-2 border-[#005911] rounded-md text-l hover:bg-[#005911] hover:text-white"
+              className="px-5 py-2 font-medium text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-l hover:bg-[#005911] hover:text-white"
             >
               Enquire to Exhibit
             </a>
             <a
               href="#"
-              className="px-5 py-2 font-medium text-white transition bg-[#005911] rounded-md shadow text-l hover:bg-green-800"
+              className="px-5 py-2 font-medium text-white transition bg-[#FAA61A] rounded-md shadow text-l hover:bg-green-800"
             >
               Download Sales Brochure
             </a>
@@ -142,10 +114,11 @@ function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <nav className="md:hidden">
             <ul className="space-y-4 text-xl font-semibold text-center">
+              {/* About Links */}
               <li>
                 <NavLink
                   to="/about-us"
@@ -162,50 +135,26 @@ function Navigation() {
                   Sustainability
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/exhibit"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
-                >
-                  Exhibit
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/visit"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
-                >
-                  Visit
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/conference"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
-                >
-                  Conference
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/media"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
-                >
-                  Media
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/travel"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
-                >
-                  Travel
-                </NavLink>
-              </li>
+
+              {/* Other Links */}
+              {["Exhibit", "Visit", "Conference", "Media", "Travel"].map(
+                (link) => (
+                  <li key={link}>
+                    <NavLink
+                      to={`/${link.toLowerCase()}`}
+                      className="block py-2 text-[#FAA61A] transition hover:text-[#005911]"
+                    >
+                      {link}
+                    </NavLink>
+                  </li>
+                )
+              )}
+
+              {/* Mobile Buttons */}
               <li>
                 <a
                   href="#"
-                  className="block py-2 font-medium text-[#005911] border-t border-gray-200 hover:bg-gray-50"
+                  className="block py-2 font-medium text-[#FAA61A] border-t border-gray-200 hover:bg-gray-50"
                 >
                   Enquire to Exhibit
                 </a>
@@ -213,7 +162,8 @@ function Navigation() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 text-white transition bg-[#005911] rounded hover:bg-green-800"
+                  className="block py-2 text-white transition bg-[#FAA61A] rounded hover:bg-green-800" 
+
                 >
                   Download Sales Brochure
                 </a>
