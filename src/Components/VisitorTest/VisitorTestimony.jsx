@@ -1,7 +1,7 @@
 import React from "react";
-import tun from '../../Assets/img/tunde.webp'
-import tai from '../../Assets/img/taiwo.webp'
-import kha from '../../Assets/img/khali.webp'
+import tun from '../../Assets/img/tunde.webp';
+import tai from '../../Assets/img/taiwo.webp';
+import kha from '../../Assets/img/khali.webp';
 
 const VisitorTestimony = () => {
   const testimonials = [
@@ -10,7 +10,7 @@ const VisitorTestimony = () => {
       role: "Executive Director, African Incentive Partnerships",
       testimonial:
         "A one-stop conference & exhibition destination for sustainable energy solutions across the entire social spectrum.",
-      image: tun, 
+      image: tun, // Update with the actual path to the image
     },
     {
       name: "Mr. Taiwo Ajayi",
@@ -39,12 +39,12 @@ const VisitorTestimony = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="p-6 text-center bg-white rounded-lg shadow-lg"
+            className="p-6 text-center bg-white rounded-lg shadow-lg border border-gray-200 min-h-[400px]" // Set minimum height
           >
             <img
               src={testimonial.image}
               alt={testimonial.name}
-              className="w-24 h-24 mx-auto mb-4 rounded-full"
+              className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-gray-300"
             />
             <p className="mb-4 italic text-gray-700">
               "{testimonial.testimonial}"

@@ -2,6 +2,13 @@ import React from "react";
 import habbeb from '../../Assets/img/habeeb.webp'
 import lamu from '../../Assets/img/lamuogunley.png'
 import diarra from '../../Assets/img/mahamado.webp'
+import meyan from '../../Assets/img/meyen.webp'
+import mokhtar from '../../Assets/img/mokhtar.webp'
+import mustapha from '../../Assets/img/mustapha.webp'
+import osayande from '../../Assets/img/osayande.webp'
+import oti from '../../Assets/img/oti.webp'
+
+
 
 const speakers = [
   {
@@ -26,31 +33,31 @@ const speakers = [
     name: "Meyen Etukudo",
     position: "CEO",
     company: "Ibom Power",
-    image: "path/to/image4.jpg", // Replace with actual image URL
+    image: meyan, // Replace with actual image URL
   },
   {
     name: "Mokhtar Bounour",
     position: "CEO",
     company: "Egbin Power Plc.",
-    image: "path/to/image5.jpg", // Replace with actual image URL
+    image: mokhtar, // Replace with actual image URL
   },
   {
     name: "Dr. Mustapha Abdullahi",
     position: "Director General",
     company: "Energy Commission of Nigeria",
-    image: "path/to/image6.jpg", // Replace with actual image URL
+    image: mustapha, // Replace with actual image URL
   },
   {
     name: "Osayande Igiehon",
     position: "CEO",
     company: "Heir Energies",
-    image: "path/to/image7.jpg", // Replace with actual image URL
+    image: osayande, // Replace with actual image URL
   },
   {
     name: "Oti Ikomi",
     position: "Exec. Vice-Chairman & CEO",
     company: "Proton Energy Africa",
-    image: "path/to/image8.jpg", // Replace with actual image URL
+    image: oti, // Replace with actual image URL
   },
 ];
 
