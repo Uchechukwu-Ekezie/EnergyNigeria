@@ -1,86 +1,65 @@
 import React, { useState, useEffect } from "react";
+import slideshow1 from "../../Assets/img/slideshow/slideshow1.png";
+import slideshow2 from "../../Assets/img/slideshow/slideshow2.png";
+import slideshow3 from "../../Assets/img/slideshow/slideshow3.png";
+import slideshow4 from "../../Assets/img/slideshow/slideshow4.png";
+import slideshow5 from "../../Assets/img/slideshow/slideshow5.png";
+import slideshow6 from "../../Assets/img/slideshow/slideshow6.png";
+import slideshow7 from "../../Assets/img/slideshow/slideshow7.png";
+import slideshow8 from "../../Assets/img/slideshow/slideshow8.png";
 
-const Slideshow = () => {
-  const slides = [
-    {
-      image: "/path/to/image1.jpg",
-      content: (
-        <>
-          <p className="font-bold text-pink-600">
-            The{" "}
-            <span className="text-red-500">
-              10<sup>th</sup> anniversary edition
-            </span>{" "}
-            of Nigeria Energy, held under the patronage of{" "}
-            <span className="font-semibold">Federal Ministry of Power</span>, 
-            was inaugurated by Chief Adebayo Adelabu, Honourable Minister of Power, 
-            Federal Republic of Nigeria.
-          </p>
-        </>
-      ),
-    },
-    { image: "/path/to/image2.jpg", content: <p>Content for slide 2</p> },
-    { image: "/path/to/image3.jpg", content: <p>Content for slide 3</p> },
-    { image: "/path/to/image4.jpg", content: <p>Content for slide 4</p> },
-    { image: "/path/to/image5.jpg", content: <p>Content for slide 5</p> },
-    { image: "/path/to/image6.jpg", content: <p>Content for slide 6</p> },
-    { image: "/path/to/image7.jpg", content: <p>Content for slide 7</p> },
-    { image: "/path/to/image8.jpg", content: <p>Content for slide 8</p> },
-    { image: "/path/to/image9.jpg", content: <p>Content for slide 9</p> },
-    { image: "/path/to/image10.jpg", content: <p>Content for slide 10</p> },
+
+
+const SlideshowCard = () => {
+  const images = [
+    { name: "Slide show 1", logo: slideshow1 },
+    { name: "Slide show 2", logo: slideshow2 },
+    { name: "Slide show 3", logo: slideshow3 },
+    { name: "Slide show 4", logo: slideshow4 },
+    { name: "Slide show 5", logo: slideshow5 },
+    { name: "Slide show 6", logo: slideshow6 },
+    { name: "Slide show 7", logo: slideshow7 },
+    { name: "Slide show 8", logo: slideshow8 },
   ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
-    <div className="py-10 bg-gray-100">
-      <div className="grid items-center max-w-6xl grid-cols-1 gap-6 mx-auto md:grid-cols-2">
-        {/* Image Section */}
-        <div className="relative">
-          {slides.map((slide, index) => (
-            <img
-              key={index}
-              src={slide.image}
-              alt={`Slide ${index + 1}`}
-              className={`w-full rounded-lg shadow-md transition-opacity duration-700 ${
-                index === currentSlide ? "opacity-100" : "opacity-0 absolute"
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Content Section */}
-        <div className="p-4 bg-white rounded-lg shadow-md">
-          <h2 className="mb-4 text-2xl font-bold text-gray-800">
-            2023 Show Highlights
-          </h2>
-          <div className="text-gray-700">{slides[currentSlide].content}</div>
-        </div>
-      </div>
-
-      {/* Dots for Navigation */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide
-                ? "bg-pink-600 scale-125"
-                : "bg-gray-300"
-            }`}
-          ></button>
-        ))}
-      </div>
+    <div className="w-72 h-72 bg-gray-100 shadow-lg rounded-md overflow-hidden">
+      <img
+        src={images[currentImageIndex].logo}
+        alt="Slideshow"
+        className="w-full h-full object-cover"
+      />
     </div>
   );
 };
 
-export default Slideshow;
+const TextCard = () => {
+  return (
+    <div className="w-72 h-72 bg-gray-100 shadow-lg rounded-md flex flex-col justify-center items-center text-center p-4">
+      <h3 className="text-xl font-bold text-gray-800">Welcome to the Slideshow</h3>
+      <p className="text-gray-600 mt-2">
+        This card contains some static text while the other card displays a
+        slideshow of images.
+      </p>
+    </div>
+  );
+};
+
+const TwoCards = () => {
+  return (
+    <div className="flex justify-center items-center gap-6 p-6">
+      <SlideshowCard />
+      <TextCard />
+    </div>
+  );
+};
+
+export default TwoCards;
