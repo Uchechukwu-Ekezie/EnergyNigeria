@@ -17,7 +17,7 @@ const VideoSection = () => {
   ];
 
   return (
-    <div className="py-10 bg-[#005911]">
+    <div className="py-10 bg-[]">
       {/* Video Thumbnails Section */}
       <div className="flex flex-wrap justify-center gap-6">
         {videos.map((video, index) => (
@@ -28,7 +28,7 @@ const VideoSection = () => {
             <img
               src={video.thumbnail}
               alt={video.alt}
-              className="w-full h-full rounded-md shadow-md object-cover"
+              className="object-cover w-full h-full rounded-md shadow-md"
             />
             {/* Play button */}
             <div className="absolute inset-0 flex items-center justify-center">
