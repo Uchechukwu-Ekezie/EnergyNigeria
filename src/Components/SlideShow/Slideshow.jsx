@@ -1,5 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import slideshow1 from "../../Assets/img/slideshow/slideshow1.png"; // Replace with your actual image path
+import slideshow1 from "../../Assets/img/slideshow/slideshow1.png";
+import slideshow2 from "../../Assets/img/slideshow/slideshow2.png";
+import slideshow3 from "../../Assets/img/slideshow/slideshow3.png";// Replace with your actual image path
+import slideshow4 from "../../Assets/img/slideshow/slideshow4.png";
+import slideshow5 from "../../Assets/img/slideshow/slideshow5.png";
+import slideshow6 from "../../Assets/img/slideshow/slideshow6.png";
+import slideshow7 from "../../Assets/img/slideshow/slideshow7.png";
+import slideshow8 from "../../Assets/img/slideshow/slideshow8.png";
 
 // Slideshow Component
 const SlideshowCard = () => {
