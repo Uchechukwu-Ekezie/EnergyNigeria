@@ -34,20 +34,23 @@ const RegistrationCards = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-50">
-      <div className="flex flex-col justify-center gap-6 md:flex-row lg:w-[60%] mx-auto p-5">
+    <div className="w-full py-12 bg-gray-50">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:w-[60%] mx-auto px-5">
         {registrations.map((registration, index) => (
           <div
             key={index}
-            className={`w-full md:w-1/2 ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6 lg:h-[50vh]`}
+            className={`w-full ${registration.bgColor} rounded-lg shadow-lg border-2 ${registration.borderColor} p-6 flex flex-col justify-between`}
           >
+            {/* Card Title */}
             <h3
-              className={`text-lg font-bold ${registration.textColor} text-center uppercase`}
+              className={`text-lg md:text-xl font-bold ${registration.textColor} text-center uppercase`}
             >
               {registration.title}
             </h3>
+
+            {/* Price */}
             <p
-              className={`text-5xl font-bold mt-4 ${
+              className={`text-4xl md:text-5xl font-bold mt-4 ${
                 registration.title === "Visitor Registration"
                   ? "text-yellow-400"
                   : "text-yellow-500"
@@ -55,10 +58,16 @@ const RegistrationCards = () => {
             >
               {registration.price}
             </p>
-            <p className={`mt-4 text-xl font-bold ${registration.textColor} text-center`}>
+
+            {/* Description */}
+            <p
+              className={`mt-4 text-sm md:text-lg font-bold ${registration.textColor} text-center`}
+            >
               {registration.description}
             </p>
-            <ul className="mt-6 space-y-2 text-xl ">
+
+            {/* Benefits */}
+            <ul className="mt-6 space-y-2 text-sm md:text-lg">
               {registration.benefits.map((benefit, idx) => (
                 <li key={idx} className="flex items-center">
                   <span className="mr-2 text-green-500">✔</span>

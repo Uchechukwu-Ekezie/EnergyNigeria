@@ -1,8 +1,8 @@
 import React from "react";
-import boom from '../../Assets/img/lithum boom.webp'
-import solar from '../../Assets/img/the-rise-of-solar-home-systems.webp'
-import renew from '../../Assets/img/renewable.webp'
-import out from '../../Assets/img/outlook.webp'
+import boom from "../../Assets/img/lithum boom.webp";
+import solar from "../../Assets/img/the-rise-of-solar-home-systems.webp";
+import renew from "../../Assets/img/renewable.webp";
+import out from "../../Assets/img/outlook.webp";
 
 const reports = [
   {
@@ -30,9 +30,9 @@ const reports = [
 const GainInsight = () => {
   return (
     <section className="bg-[#005911] text-white py-12 w-full">
-      <div className="px-4 mx-auto text-center max-w-screen-xl">
+      <div className="max-w-screen-xl px-4 mx-auto text-center">
         {/* Section Header */}
-        <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold">
+        <h2 className="mb-6 text-3xl font-bold sm:text-4xl md:text-5xl">
           Gain insights into the region's energy sector
         </h2>
         <p className="mb-8 text-lg sm:text-xl">
@@ -52,7 +52,7 @@ const GainInsight = () => {
                 className="object-cover w-full mb-4 rounded-md max-h-[200px] sm:max-h-[250px] md:max-h-[300px]"
               />
               {/* Report Title */}
-              <h3 className="mb-4 text-lg sm:text-xl font-bold text-center">
+              <h3 className="mb-4 text-lg font-bold text-center sm:text-xl">
                 {report.title}
               </h3>
               {/* Download Button */}
