@@ -12,6 +12,7 @@ import RegistrationCards from "../Components/Registration/RegistrationCards";
 import Slideshow from "../Components/SlideShow/Slideshow";
 import FeatureExhibitor from "../Components/FeatureExibitor/FeatureExhibitor";
 import SponsorsCarousel from "../Components/SponsorsCarousel/SponsorsCarousel"
+import ShowFeature from "../Components/ShowFeature/ShowFeature";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <HeroOne />
         <HeroTwo />
         <FeatureExhibitor/>
+        <ShowFeature/>
         <Speakers />
         <RegistrationCards/>
         <VisitorTestimony />

@@ -55,6 +55,10 @@ const speakers = [
 ];
 
 const Speakers = () => {
+//create a function to add
+
+
+
   return (
     <section className="py-12 bg-gray-100">
       <div className="px-4 mx-auto max-w-7xl">

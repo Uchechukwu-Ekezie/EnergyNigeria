@@ -7,9 +7,9 @@ function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow ">
+    <header className="bg-white shadow">
       <div className="w-full px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 py-14 ">
+        <div className="flex items-center justify-between h-16 py-14">
           {/* Logo Section */}
           <div className="flex items-center ml-[-80px]">
             <Link to="/">
@@ -23,8 +23,8 @@ function Navigation() {
 
           {/* Navigation Links */}
           <div className="hidden md:block">
-          <nav aria-label="Global">
-            <ul className="flex items-center gap-10 text-l ">
+            <nav aria-label="Global">
+              <ul className="flex items-center gap-10 text-l">
                 {/* About Dropdown */}
                 <li
                   className="relative group"
@@ -33,7 +33,7 @@ function Navigation() {
                 >
                   <NavLink
                     to="#"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
                     About
                   </NavLink>
@@ -42,7 +42,7 @@ function Navigation() {
                       <li>
                         <NavLink
                           to="/about-us"
-                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-teal-600"
+                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
                         >
                           About Us
                         </NavLink>
@@ -50,7 +50,7 @@ function Navigation() {
                       <li>
                         <NavLink
                           to="/sustainability"
-                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-teal-600"
+                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
                         >
                           Sustainability
                         </NavLink>
@@ -63,15 +63,15 @@ function Navigation() {
                 <li>
                   <NavLink
                     to="/exhibit"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
-                    Exhibite
+                    Exhibit
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="/visit"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
                     Visit
                   </NavLink>
@@ -79,7 +79,7 @@ function Navigation() {
                 <li>
                   <NavLink
                     to="/conference"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
                     Conference
                   </NavLink>
@@ -87,7 +87,7 @@ function Navigation() {
                 <li>
                   <NavLink
                     to="/media"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
                     Media
                   </NavLink>
@@ -95,7 +95,7 @@ function Navigation() {
                 <li>
                   <NavLink
                     to="/travel"
-                    className="text-gray-700 transition hover:text-teal-600"
+                    className="text-gray-700 transition hover:text-[#005911]"
                   >
                     Travel
                   </NavLink>
@@ -108,13 +108,13 @@ function Navigation() {
           <div className="items-center hidden gap-4 md:flex">
             <a
               href="#"
-              className="px-5 py-2 font-medium text-teal-600 transition border-2 border-teal-600 rounded-md text-l hover:bg-teal-600 hover:text-white"
+              className="px-5 py-2 font-medium text-[#005911] transition border-2 border-[#005911] rounded-md text-l hover:bg-[#005911] hover:text-white"
             >
               Enquire to Exhibit
             </a>
             <a
               href="#"
-              className="px-5 py-2 font-medium text-white transition bg-teal-600 rounded-md shadow text-l hover:bg-teal-700"
+              className="px-5 py-2 font-medium text-white transition bg-[#005911] rounded-md shadow text-l hover:bg-green-800"
             >
               Download Sales Brochure
             </a>
@@ -149,7 +149,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/about-us"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   About Us
                 </NavLink>
@@ -157,7 +157,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/sustainability"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Sustainability
                 </NavLink>
@@ -165,7 +165,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/exhibit"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Exhibit
                 </NavLink>
@@ -173,7 +173,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/visit"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Visit
                 </NavLink>
@@ -181,7 +181,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/conference"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Conference
                 </NavLink>
@@ -189,7 +189,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/media"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Media
                 </NavLink>
@@ -197,7 +197,7 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/travel"
-                  className="block py-2 text-gray-700 transition hover:text-teal-600"
+                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
                 >
                   Travel
                 </NavLink>
@@ -205,7 +205,7 @@ function Navigation() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pt-4 mt-4 font-medium text-teal-600 border-t border-gray-200 hover:bg-gray-50"
+                  className="block py-2 font-medium text-[#005911] border-t border-gray-200 hover:bg-gray-50"
                 >
                   Enquire to Exhibit
                 </a>
@@ -213,7 +213,7 @@ function Navigation() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 text-white transition bg-teal-600 rounded hover:bg-teal-700"
+                  className="block py-2 text-white transition bg-[#005911] rounded hover:bg-green-800"
                 >
                   Download Sales Brochure
                 </a>
