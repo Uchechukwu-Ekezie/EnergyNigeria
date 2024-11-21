@@ -1,17 +1,6 @@
-<<<<<<< HEAD
-import React, { useEffect, useRef, useState } from "react";
-import { MdArrowBackIosNew } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
-
-
-import extra1 from "../../Assets/img/xtrapower.webp";
-import lucy from "../../Assets/img/lucy-logo.webp";
-import sunbet from "../../Assets/img/sunbelt.webp";
-=======
 import React, { useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import jasolar from "../../Assets/img/jasolar.webp";
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
 import nnpc from "../../Assets/img/npp.webp";
 import ats from "../../Assets/img/ats.webp";
 import meksan from "../../Assets/img/meksan.png";
@@ -31,7 +20,7 @@ const ExhibitorsCarousel = () => {
   const scrollNext = () => {
     const container = containerRef.current;
     container.style.transition = "transform 0.5s ease-in-out";
-    container.style.transform = `translateX(-150px)`;
+    container.style.transform = `translateX(-200px)`;
 
     setTimeout(() => {
       container.style.transition = "none";
@@ -47,7 +36,7 @@ const ExhibitorsCarousel = () => {
       container.lastElementChild,
       container.firstElementChild
     );
-    container.style.transform = `translateX(-150px)`;
+    container.style.transform = `translateX(-200px)`;
 
     setTimeout(() => {
       container.style.transition = "transform 0.5s ease-in-out";
@@ -71,25 +60,11 @@ const ExhibitorsCarousel = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div
-      className="relative max-w-5xl mx-auto overflow-hidden"
-      style={{ height: "300px" }} // Adjusted height
-    >
-      <h2
-        className="text-center text-red-500 mb-6"
-        style={{
-          fontSize: "1.8rem", // Slightly reduced heading size
-          fontWeight: "bold", // Bold heading
-        }}
-      >
-=======
     <div className="relative h-[50vh]">
 
     
     <div className="max-w-5xl mt-11  mx-auto overflow-hidden">
       <h2 className="text-center text-red-500 mb-6 font-bold text-2xl">
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
         FEATURED EXHIBITORS 2024
       </h2>
 
@@ -101,20 +76,12 @@ const ExhibitorsCarousel = () => {
           // marginLeft: "-2rem", // Moves the arrow outside the carousel
         }}
       >
-<<<<<<< HEAD
-        <MdArrowBackIosNew />
-=======
         <FaChevronLeft className="text-4xl" />
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
       </button>
 
       {/* Carousel Container */}
       <div
-<<<<<<< HEAD
-        className="flex items-center space-x-4" // Adjusted spacing between exhibitors
-=======
         className="flex items-center  mt-20 space-x-6"
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
         ref={containerRef}
         style={{
           display: "flex",
@@ -127,17 +94,12 @@ const ExhibitorsCarousel = () => {
           <div
             key={index}
             className="flex-shrink-0 flex items-center justify-center"
-            style={{ minWidth: "150px" }} // Reduced container size
+            style={{ minWidth: "200px" }}
           >
             <img
               src={item.logo}
               alt={item.name}
-<<<<<<< HEAD
-              className="h-16 mx-auto" // Reduced image size
-              style={{ objectFit: "contain" }} // Ensure images are not distorted
-=======
               className="h-24 mx-auto object-contain"
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
             />
           </div>
         ))}
@@ -151,11 +113,7 @@ const ExhibitorsCarousel = () => {
           // marginRight: "-2rem", // Moves the arrow outside the carousel
         }}
       >
-<<<<<<< HEAD
-       <MdArrowForwardIos />
-=======
         <FaChevronRight className="text-4xl" />
->>>>>>> 7730401cbaeb3a37785ecfae1833082a888b6d33
       </button>
     </div>
     </div>
