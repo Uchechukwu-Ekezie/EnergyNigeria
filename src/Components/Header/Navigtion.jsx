@@ -8,10 +8,10 @@ function Navigation() {
 
   return (
     <header className="bg-white shadow">
-      <div className="w-full px-4 mx-auto sm:px-6 lg:px-8">
+      <div className="mx-auto w-[90%] sm:px-6">
         <div className="flex items-center justify-between h-16 py-14">
           {/* Logo Section */}
-          <div className="flex items-center ml-[]">
+          <div className="flex items-center">
             <Link to="/">
               <img
                 src={logo}
@@ -93,25 +93,34 @@ function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="block p-2 text-gray-600 bg-gray-100 rounded md:hidden hover:text-gray-700"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
+          <div className="flex items-center justify-between w-full md:hidden">
+            <Link to="/">
+              <img
+                src={logo}
+                alt="logo"
+                className="h-[50px] w-auto object-contain hidden"
               />
-            </svg>
-          </button>
+            </Link>
+            <button
+              className="p-2 text-gray-600 bg-gray-100 rounded hover:text-gray-700"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation Menu */}
@@ -142,7 +151,7 @@ function Navigation() {
                   <li key={link}>
                     <NavLink
                       to={`/${link.toLowerCase()}`}
-                      className="block py-2 text-[#FAA61A] transition hover:text-[#005911]"
+                      className="block py-2 text-gray-700 transition hover:text-[#005911]"
                     >
                       {link}
                     </NavLink>
@@ -162,8 +171,7 @@ function Navigation() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 text-white transition bg-[#FAA61A] rounded hover:bg-green-800" 
-
+                  className="block py-2 text-white transition bg-[#FAA61A] rounded hover:bg-green-800"
                 >
                   Download Sales Brochure
                 </a>

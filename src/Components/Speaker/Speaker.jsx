@@ -70,13 +70,13 @@ const Speakers = () => {
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-4 text-center transition bg-white rounded-lg shadow-md hover:shadow-lg"
+              className="flex flex-col items-center p-4 text-center transition"
             >
               {/* Speaker Image */}
               <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="w-24 h-24 mb-4 border-4 border-yellow-500 rounded-full"
+                className="w-48 h-48 mb-4 border-4 border-yellow-500 rounded-full"
               />
               {/* Speaker Name */}
               <h3 className="text-lg font-bold">{speaker.name}</h3>

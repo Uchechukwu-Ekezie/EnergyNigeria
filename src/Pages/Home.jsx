@@ -18,7 +18,7 @@ function Home() {
   return (
     <div>
       <Hero />
-      <div className="lg:mt-[-140px]">
+      <div className="">
         <HeroOne />
         <HeroTwo />
         <FeatureExhibitor/>
