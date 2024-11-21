@@ -10,7 +10,7 @@ const VisitorTestimony = () => {
       role: "Executive Director, African Incentive Partnerships",
       testimonial:
         "A one-stop conference & exhibition destination for sustainable energy solutions across the entire social spectrum.",
-      image: tun, // Update with the actual path to the image
+      image: tun, 
     },
     {
       name: "Mr. Taiwo Ajayi",
