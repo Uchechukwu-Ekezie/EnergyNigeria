@@ -1,26 +1,31 @@
 import React from "react";
+import solarpanel from "../../Assets/img/solarpane;.webp";
+import Generator from "../../Assets/img/generator.webp";
+import carpump from "../../Assets/img/carpump.webp";
+import hightension from "../../Assets/img/hightension.webp";
+import smarthouse from "../../Assets/img/smarthouse.webp";
 
 const ProductSectors = () => {
   const sectors = [
     {
       title: "Renewables & Clean Energy",
-      img: "https://via.placeholder.com/150", // Replace with actual image URL
+      img: solarpanel,
     },
     {
       title: "Back-up Generators & Critical Power",
-      img: "https://via.placeholder.com/150", // Replace with actual image URL
+      img: Generator,
     },
     {
       title: "Energy Consumption & Management",
-      img: "https://via.placeholder.com/150", // Replace with actual image URL
+      img: carpump,
     },
     {
       title: "Transmission & Distribution",
-      img: "https://via.placeholder.com/150", // Replace with actual image URL
+      img: hightension,
     },
     {
       title: "Smart Solutions",
-      img: "https://via.placeholder.com/150", // Replace with actual image URL
+      img: smarthouse,
     },
   ];
 
@@ -33,25 +38,25 @@ const ProductSectors = () => {
           dedicated product sectors.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-6 px-4">
+      <div className="grid grid-cols-5 gap-6 px-4">
         {sectors.map((sector, index) => (
           <div
             key={index}
-            className="bg-pink-100 border border-yellow-500 rounded-lg p-4 w-64 flex flex-col items-center"
+            className="bg-pink-100 border border-yellow-500 rounded-lg p-6 flex flex-col items-center transition-transform hover:scale-105"
           >
             <img
               src={sector.img}
               alt={sector.title}
-              className="h-24 mb-4"
+              className="h-40 w-40 object-contain mb-4"
             />
-            <p className="text-orange-500 font-bold text-center">
+            <p className="text-orange-500 font-bold text-center text-lg">
               {sector.title}
             </p>
           </div>
         ))}
       </div>
-      <div className="text-center mt-8">
-        <button className="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600">
+      <div className="text-center mt-10">
+        <button className="bg-yellow-500 text-white px-8 py-3 rounded-full text-lg hover:bg-yellow-600">
           Learn more
         </button>
       </div>
