@@ -9,14 +9,14 @@ function Navigation() {
   return (
     <header className="bg-white shadow">
       <div className="mx-auto w-[90%] sm:px-6">
-        <div className="flex items-center justify-between h-16 py-14">
+        <div className="flex items-center justify-between h-16 py-4 sm:py-14">
           {/* Logo Section */}
           <div className="flex items-center">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[100px] w-auto object-contain"
+                className="h-[50px] sm:h-[100px] w-auto object-contain"
               />
             </Link>
           </div>
@@ -98,7 +98,7 @@ function Navigation() {
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] w-auto object-contain hidden"
+                className="h-[50px] sm:h-[50px] w-auto object-contain"
               />
             </Link>
             <button
@@ -125,7 +125,7 @@ function Navigation() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden">
+          <nav className="md:hidden bg-white shadow-md p-4">
             <ul className="space-y-4 text-xl font-semibold text-center">
               {/* About Links */}
               <li>
