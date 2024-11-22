@@ -60,7 +60,7 @@ const ExhibitorsCarousel = () => {
   }, []);
 
   return (
-    <div className="relative h-[10vh]  md:h-[15vh] lg:h-[20vh]">
+    <div className="relative h-[13vh]  md:h-[15vh] lg:h-[20vh]">
       <div className="relative max-w-5xl px-4 mx-auto mt-6 overflow-hidden">
         <h2 className="mb-4 text-lg font-bold text-center text-red-500 md:text-xl">
           FEATURED EXHIBITORS 2024

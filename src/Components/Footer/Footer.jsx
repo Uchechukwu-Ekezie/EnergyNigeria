@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="py-8 text-gray-300 bg-teal-700">
+    <footer className="py-8 text-gray-300 bg-[#005911]">
       <div className="grid grid-cols-1 gap-6 px-4 mx-auto max-w-7xl md:grid-cols-4">
         {/* Opening Times Section */}
         <div>
