@@ -7,7 +7,7 @@ function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow">
+    <header className="bg-white shadow sticky top-0 z-50">
       <div className="mx-auto w-[90%] sm:px-6">
         <div className="flex items-center justify-between h-16 py-4 sm:py-14">
           {/* Logo Section */}
