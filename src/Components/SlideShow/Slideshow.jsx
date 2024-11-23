@@ -87,7 +87,7 @@ const TwoCards = () => {
   return (
     <div className="w-full bg-gray-200 flex flex-col justify-center items-center min-h-screen">
       <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
-        2023 Show Highlights
+         Show Highlights
       </h3>
       <section className="bg-slate-50 w-11/12 sm:w-4/6 py-6 px-4 flex flex-col sm:flex-row items-stretch -gap-6 sm:gap-12">
         <SlideshowCard />

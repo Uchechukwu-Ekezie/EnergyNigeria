@@ -4,6 +4,26 @@ import why2 from "../../Assets/img/whysponnsor.webp";
 
 const WhyExhibit = () => {
   const sections = [
+
+    {
+      title: "Why exhibit?",
+      image: why,
+      points: [
+        {
+          bold: "Spark new deals:",
+          normal:
+            " Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
+        },
+        {
+          bold: "Connect and collaborate:",
+          normal:
+            " Network face-to-face with key decision-makers and potential partners to unlock business opportunities.",
+        },
+      ],
+      buttonText: "Stand Enquiry",
+    },
+
+
     {
       title: "Why exhibit?",
       image: why,
@@ -42,7 +62,7 @@ const WhyExhibit = () => {
 
   return (
     <section className="w-full py-8 bg-yellow-400 sm:py-12">
-      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:max-w-6xl lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[90%] lg:grid-cols-3">
         {sections.map((section, index) => (
           <div
             key={index}
