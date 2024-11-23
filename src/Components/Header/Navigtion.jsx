@@ -7,16 +7,16 @@ function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow">
+    <header className="sticky top-0 z-50 bg-white shadow">
       <div className="mx-auto w-[90%] sm:px-6">
-        <div className="flex items-center justify-between h-16 py-14">
+        <div className="flex items-center justify-between h-16 py-4 sm:py-14">
           {/* Logo Section */}
           <div className="flex items-center">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] md:h-[100px] w-auto object-contain"
+                className="h-[50px] sm:h-[50px] md:h-[100px] w-auto object-contain hidden lg:block"
               />
             </Link>
           </div>
@@ -98,7 +98,7 @@ function Navigation() {
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] w-auto object-contain"
+                className="h-[60px] sm:h-[100px] w-auto object-contain"
               />
             </Link>
             <button
@@ -125,7 +125,7 @@ function Navigation() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden">
+          <nav className="md:hidden">
             <ul className="space-y-4 text-xl font-semibold text-center">
               {/* About Links */}
               <li>

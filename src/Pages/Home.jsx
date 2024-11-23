@@ -6,14 +6,14 @@ import One from "../Components/Sponsor/One";
 import Speakers from "../Components/Speaker/Speaker";
 import GainInsight from "../Components/GainInsight/GainInsight";
 import WhyExhibit from "../Components/WhyExhibit/WhyExhibit";
-import VisitorTestimony from "../Components/VisitorTest/VisitorTestimony";
+// import VisitorTestimony from "../Components/VisitorTest/VisitorTestimony";
 import VideoSection from "../Components/VideoSection/VideoSection";
 import RegistrationCards from "../Components/Registration/RegistrationCards";
 import Slideshow from "../Components/SlideShow/Slideshow";
-import FeatureExhibitor from "../Components/FeatureExibitor/FeatureExhibitor";
-import SponsorsCarousel from "../Components/SponsorsCarousel/SponsorsCarousel"
+// import FeatureExhibitor from "../Components/FeatureExibitor/FeatureExhibitor";
+// import SponsorsCarousel from "../Components/SponsorsCarousel/SponsorsCarousel"
 import ShowFeature from "../Components/ShowFeature/ShowFeature";
-import ProductSectors from "../Components/ProductSector/Product";
+// import ProductSectors from "../Components/ProductSector/Product";
 
 function Home() {
   return (
@@ -22,17 +22,17 @@ function Home() {
       <div className="">
         <HeroOne />
         <HeroTwo />
-        <FeatureExhibitor/>
+        {/* <FeatureExhibitor/> */}
         <ShowFeature/>
         <Speakers />
         <RegistrationCards/>
-        <VisitorTestimony />
-        <ProductSectors/>
+        {/* <VisitorTestimony /> */}
+        {/* <ProductSectors/> */}
         <WhyExhibit />
         <Slideshow/>
         <VideoSection/>
         <GainInsight />
-        <SponsorsCarousel/>
+        {/* <SponsorsCarousel/> */}
         <One />
       </div>
     </div>

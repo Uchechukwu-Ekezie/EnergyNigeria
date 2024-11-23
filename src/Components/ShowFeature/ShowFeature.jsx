@@ -36,7 +36,7 @@ const ShowFeature = () => {
     <section className="w-full h-auto py-10 bg-gray-300">
       <div className="container px-4 mx-auto">
         <h2 className="mb-6 text-3xl font-bold text-center">
-          2024 Show Features
+          2025 Show Features
         </h2>
         <div className="grid w-[80%] gap-6 mx-auto md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
