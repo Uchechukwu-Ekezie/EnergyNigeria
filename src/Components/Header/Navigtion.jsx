@@ -16,13 +16,13 @@ function Navigation() {
               <img
                 src={logo}
                 alt="logo"
-                className="h-[100px] w-auto object-contain"
+                className="h-[50px] md:h-[100px] w-auto object-contain"
               />
             </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:block">
+          {/* Desktop and Tablet Navigation Links */}
+          <div className="hidden lg:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-10 text-l">
                 {/* Dropdown for About */}
@@ -77,7 +77,7 @@ function Navigation() {
           </div>
 
           {/* Buttons */}
-          <div className="items-center hidden gap-4 md:flex">
+          <div className="items-center hidden gap-4 lg:flex">
             <a
               href="#"
               className="px-5 py-2 font-medium text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-l hover:bg-[#005911] hover:text-white"
@@ -93,12 +93,12 @@ function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center justify-between w-full md:hidden">
+          <div className="flex items-center justify-between w-full lg:hidden">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] w-auto object-contain hidden"
+                className="h-[50px] w-auto object-contain"
               />
             </Link>
             <button
@@ -125,7 +125,7 @@ function Navigation() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden">
+          <nav className="lg:hidden">
             <ul className="space-y-4 text-xl font-semibold text-center">
               {/* About Links */}
               <li>
