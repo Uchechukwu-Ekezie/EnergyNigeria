@@ -77,7 +77,7 @@ function Navigation() {
           </div>
 
           {/* Buttons */}
-          <div className="ml-9 hidden gap-4 md:flex items-center">
+          <div className="ml-9 hidden gap-4 md:hidden lg:flex items-center">
   <a
     href="#"
     className="px-4 py-2 text-base font-bold text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-center hover:bg-[#005911] hover:text-white"
@@ -126,7 +126,7 @@ function Navigation() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden">
+          <nav className="md:block">
             <ul className="space-y-4 text-xl font-semibold text-center">
               {/* About Links */}
               <li>

@@ -4,26 +4,6 @@ import why2 from "../../Assets/img/whysponnsor.webp";
 
 const WhyExhibit = () => {
   const sections = [
-
-    {
-      title: "Why exhibit?",
-      image: why,
-      points: [
-        {
-          bold: "Spark new deals:",
-          normal:
-            " Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
-        },
-        {
-          bold: "Connect and collaborate:",
-          normal:
-            " Network face-to-face with key decision-makers and potential partners to unlock business opportunities.",
-        },
-      ],
-      buttonText: "Stand Enquiry",
-    },
-
-
     {
       title: "WHY PARTICIPATE?",
       image: why,
