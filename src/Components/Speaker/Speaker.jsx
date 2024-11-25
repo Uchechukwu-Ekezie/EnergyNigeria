@@ -71,7 +71,7 @@ const Speakers = () => {
       <div className="px-4 mx-auto max-w-7xl">
         {/* Section Header */}
         <h2 className="mb-8 text-3xl font-bold text-center">
-          Some of our key speakers include
+          Speakers & Delegates
         </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {speakers.map((speaker, index) => (

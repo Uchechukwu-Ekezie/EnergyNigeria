@@ -61,7 +61,7 @@ const TextCard = () => {
   return (
     <div className="w-full sm:w-1/2 bg-white shadow-md rounded-md p-6 sm:p-10 text-left flex flex-col justify-between">
       <h3 className="text-3xl font-bold text-gray-800 mb-4">
-        2023 Show Highlights
+        2025 Show Highlights
       </h3>
       <p className="text-gray-700 leading-relaxed mb-4">
         The <span className="font-bold">10th anniversary</span> edition of

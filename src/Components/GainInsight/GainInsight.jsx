@@ -10,11 +10,11 @@ const reports = [
     image: boom, // Replace with the actual image path
     buttonText: "Download the report",
   },
-  {
-    title: "The rise of solar home system in West Africa",
-    image: solar, // Replace with the actual image path
-    buttonText: "Download the report",
-  },
+  // {
+  //   title: "The rise of solar home system in West Africa",
+  //   image: solar, // Replace with the actual image path
+  //   buttonText: "Download the report",
+  // },
   {
     title: "The Renewable Energy roadmap report",
     image: renew, // Replace with the actual image path
@@ -33,13 +33,13 @@ const GainInsight = () => {
       <div className="max-w-screen-xl px-4 mx-auto text-center">
         {/* Section Header */}
         <h2 className="mb-6 text-3xl font-bold sm:text-4xl md:text-5xl">
-          Gain insights into the region's energy sector
+          GAIN INSIGHTS INTO THE NIGERIA RENEWABLE ENERGY SECTOR
         </h2>
         <p className="mb-8 text-lg sm:text-xl">
           Regional industry reports brought to you by the editorial team behind Energy & Utilities
         </p>
         {/* Reports Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {reports.map((report, index) => (
             <div
               key={index}

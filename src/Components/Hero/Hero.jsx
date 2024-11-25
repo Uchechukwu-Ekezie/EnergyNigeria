@@ -26,18 +26,18 @@ function Hero() {
           <div className="max-w-lg text-center sm:text-left lg:max-w-2xl">
             {/* Title */}
             <h1 className="text-2xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              West Africa's leading energy event
+              RENEW NIGERIA Unlocking Nigeria's Energy Future
             </h1>
 
             {/* Date and Location */}
             <div className="mt-6 space-y-4 text-lg text-gray-300 sm:text-xl">
               <div className="flex items-center justify-center sm:justify-start">
                 <FaRegCalendarAlt className="mr-3 text-2xl text-[#005911]" />
-                <span>23 - 25 November 2022</span>
+                <span>11 - 13 Febuary, 2025</span>
               </div>
               <div className="flex items-center justify-center sm:justify-start">
                 <FaMapMarkerAlt className="mr-3 text-2xl text-[#005911]" />
-                <span>Landmark Centre, Lagos, Nigeria</span>
+                <span>Eko Hotel, Lagos State, Nigeria</span>
               </div>
             </div>
 
@@ -47,14 +47,14 @@ function Hero() {
                 href="#"
                 className="block w-full px-6 py-3 text-sm font-medium text-white bg-[#005911] rounded shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-900 sm:w-auto"
               >
-                Book a Stand
+                Register Now
               </a>
 
               <a
                 href="#"
                 className="block w-full px-6 py-3 text-sm font-medium text-[#005911] bg-white rounded shadow hover:text-green-800 focus:outline-none focus:ring active:text-green-900 sm:w-auto"
               >
-                Download Sales Brochure
+                Learn More
               </a>
             </div>
           </div>

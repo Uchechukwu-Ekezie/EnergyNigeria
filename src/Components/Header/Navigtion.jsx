@@ -77,20 +77,21 @@ function Navigation() {
           </div>
 
           {/* Buttons */}
-          <div className="items-center hidden gap-4 md:flex">
-            <a
-              href="#"
-              className="px-5 py-2 font-medium text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-l hover:bg-[#005911] hover:text-white"
-            >
-              Enquire to Exhibit
-            </a>
-            <a
-              href="#"
-              className="px-5 py-2 font-medium text-white transition bg-[#FAA61A] rounded-md shadow text-l hover:bg-green-800"
-            >
-              Download Sales Brochure
-            </a>
-          </div>
+          <div className="ml-9 hidden gap-4 md:flex items-center">
+  <a
+    href="#"
+    className="px-4 py-2 text-base font-bold text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-center hover:bg-[#005911] hover:text-white"
+  >
+    Enquire to participate
+  </a>
+  <a
+    href="#"
+    className="px-5 py-2 text-base font-bold text-white transition bg-[#FAA61A] rounded-md shadow text-center hover:bg-green-800"
+  >
+    Download Brochure
+  </a>
+</div>
+
 
           {/* Mobile Menu Button */}
           <div className="flex items-center justify-between w-full md:hidden">
@@ -165,7 +166,7 @@ function Navigation() {
                   href="#"
                   className="block py-2 font-medium text-[#FAA61A] border-t border-gray-200 hover:bg-gray-50"
                 >
-                  Enquire to Exhibit
+                  Enquire to participate
                 </a>
               </li>
               <li>
@@ -173,7 +174,7 @@ function Navigation() {
                   href="#"
                   className="block py-2 text-white transition bg-[#FAA61A] rounded hover:bg-green-800"
                 >
-                  Download Sales Brochure
+                  Download Brochure
                 </a>
               </li>
             </ul>

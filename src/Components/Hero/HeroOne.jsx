@@ -10,7 +10,7 @@ function HeroOne() {
         {/* Social Media Section */}
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="font-bold text-white text-l sm:text-xl lg:text-2xl">
-            Stay connected with us on social media #NE2024
+            Stay connected witt Us #RN2025
           </h1>
           <div className="flex justify-center pt-6 space-x-6">
             <Link
@@ -49,7 +49,7 @@ function HeroOne() {
         {/* Patronage Section */}
         <div className="flex flex-col items-center text-center lg:items-end mx-7">
           <h1 className="mb-4 text-lg font-bold text-yellow-400 lg:mb-8 sm:text-xl lg:text-2xl">
-            Under the patronage of
+            Organizers
           </h1>
           <img
             src={gov}

@@ -3,9 +3,9 @@ import React from "react";
 const RegistrationCards = () => {
   const registrations = [
     {
-      title: "Visitor Registration",
-      price: "FREE",
-      description: "Your free visitor pass will give access to:",
+      title: "Enterprise",
+      price: "49$",
+      description: "ultimate for Enterprise Solutions.",
       benefits: [
         "150+ local and international exhibitors",
         "Technical Seminar",
@@ -16,10 +16,10 @@ const RegistrationCards = () => {
       borderColor: "border-pink-400",
     },
     {
-      title: "Delegate Registration",
-      price: "$500",
+      title: "Free",
+      price: "$0",
       description:
-        "Your 3x day all-access delegate pass will give you access to:",
+        "Best for small Teams or individuals.",
       benefits: [
         "All benefits of visitor pass access",
         "Keynote addresses and roundtable sessions",

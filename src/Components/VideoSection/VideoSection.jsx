@@ -58,7 +58,7 @@ const VideoSection = () => {
           >
             <path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z" />
           </svg>
-          Download the 2023 Post Show Report
+          Download the 2024 Post share Brochure
         </button>
       </div>
     </div>
