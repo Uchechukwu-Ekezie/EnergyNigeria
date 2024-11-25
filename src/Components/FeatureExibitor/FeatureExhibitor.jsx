@@ -60,16 +60,22 @@ const ExhibitorsCarousel = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div className="relative h-[25vh]  md:h-[15vh] lg:h-[25vh]">
       <div className="relative max-w-5xl px-4 mx-auto mt-6 overflow-hidden">
         <h2 className="mb-4 text-lg font-bold text-center text-red-500 md:text-xl">
+=======
+    <div className="relative h-[25vh]  md:h-[15vh] lg:h-[28vh]">
+      <div className="relative max-w-5xl px-4 mx-auto mt-6 overflow-hidden ">
+        <h2 className="mb-10 text-lg font-bold text-center text-red-500 md:text-xl">
+>>>>>>> 6038cdba607c2dd17d3182c9abca703b5420d06a
           FEATURED EXHIBITORS 2024
         </h2>
 
         {/* Left Arrow */}
         <button
           onClick={scrollPrev}
-          className="absolute z-10 text-black transform -translate-y-1/2 left-2 md:left-4 top-1/2"
+          className="absolute z-10 text-black transform -translate-y-1/2 left-2 md:left-4 top-24  "
         >
           <FaChevronLeft className="text-5xl md:text-6xl lg:text-7xl" />
         </button>
@@ -88,7 +94,7 @@ const ExhibitorsCarousel = () => {
           {exhibitors.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-center flex-shrink-0"
+              className="flex items-center justify-center flex-shrink-0 mb-40"
               style={{
                 minWidth: "100%", // Take full width for one item per view
               }}
@@ -105,7 +111,7 @@ const ExhibitorsCarousel = () => {
         {/* Right Arrow */}
         <button
           onClick={scrollNext}
-          className="absolute z-10 text-black transform -translate-y-1/2 right-2 md:right-4 top-1/2"
+          className="absolute z-10 text-black transform -translate-y-1/2 right-2 md:right-4 top-24"
         >
           <FaChevronRight className="text-5xl md:text-6xl lg:text-7xl" />
         </button>

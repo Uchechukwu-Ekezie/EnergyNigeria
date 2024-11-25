@@ -7,22 +7,22 @@ function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow">
+    <header className="sticky top-0 z-50 bg-white shadow">
       <div className="mx-auto w-[90%] sm:px-6">
-        <div className="flex items-center justify-between h-16 py-14">
+        <div className="flex items-center justify-between h-16 py-4 sm:py-14">
           {/* Logo Section */}
           <div className="flex items-center">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[100px] w-auto object-contain"
+                className="h-[50px] sm:h-[50px] md:h-[100px] w-auto object-contain hidden lg:block"
               />
             </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:block">
+          {/* Desktop and Tablet Navigation Links */}
+          <div className="hidden lg:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-10 text-l">
                 {/* Dropdown for About */}
@@ -94,12 +94,12 @@ function Navigation() {
 
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center justify-between w-full md:hidden">
+          <div className="flex items-center justify-between w-full lg:hidden">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] w-auto object-contain hidden"
+                className="h-[60px] sm:h-[100px] w-auto object-contain"
               />
             </Link>
             <button

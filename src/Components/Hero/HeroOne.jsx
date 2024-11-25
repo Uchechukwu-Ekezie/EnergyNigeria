@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gov from "../../Assets/img/federalmin.webp";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+import gov from "../../Assets/img/assembly.png";
 
 function HeroOne() {
   return (
@@ -10,7 +10,9 @@ function HeroOne() {
         {/* Social Media Section */}
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="font-bold text-white text-l sm:text-xl lg:text-2xl">
-            Stay connected witt Us #RN2025
+
+            Stay connected with Us #RN2025
+
           </h1>
           <div className="flex justify-center pt-6 space-x-6">
             <Link

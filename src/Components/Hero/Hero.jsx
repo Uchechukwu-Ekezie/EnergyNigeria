@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
 import vid from "../../Assets/video/nigeria-energy-exhibition-reel.mp4";
 
+
 function Hero() {
   return (
     <div>
@@ -33,7 +34,9 @@ function Hero() {
             <div className="mt-6 space-y-4 text-lg text-gray-300 sm:text-xl">
               <div className="flex items-center justify-center sm:justify-start">
                 <FaRegCalendarAlt className="mr-3 text-2xl text-[#005911]" />
+
                 <span>11 - 13 Febuary, 2025</span>
+
               </div>
               <div className="flex items-center justify-center sm:justify-start">
                 <FaMapMarkerAlt className="mr-3 text-2xl text-[#005911]" />
@@ -47,7 +50,9 @@ function Hero() {
                 href="#"
                 className="block w-full px-6 py-3 text-sm font-medium text-white bg-[#005911] rounded shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-900 sm:w-auto"
               >
+
                 Register Now
+
               </a>
 
               <a

@@ -18,15 +18,15 @@ const Footer = () => {
           <h2 className="mb-4 text-lg font-bold text-white">OPENING TIMES</h2>
           <ul>
             <li className="mb-2">
-              <strong>15 October 2024:</strong> <br />
+              <strong>15 October 2025:</strong> <br />
               Tuesday | 10:00 - 17:00
             </li>
             <li className="mb-2">
-              <strong>16 October 2024:</strong> <br />
+              <strong>16 October 2025:</strong> <br />
               Wednesday | 10:00 - 17:00
             </li>
             <li>
-              <strong>17 October 2024:</strong> <br />
+              <strong>17 October 2025:</strong> <br />
               Thursday | 10:00 - 17:00
             </li>
           </ul>

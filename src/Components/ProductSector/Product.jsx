@@ -35,10 +35,10 @@ const ProductSectors = () => {
         <h2 className="text-3xl font-bold">Product sectors</h2>
         <p className="mt-4 text-yellow-500">
           Nigeria Energy unites the West African energy community through FIVE
-          dedicated product sectors.
+          dedicated product sector
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-[70%] mx-auto">
+      <div className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-[7c0%] mx-auto">
         {sectors.map((sector, index) => (
           <div
             key={index}

@@ -1,17 +1,20 @@
 import React from "react";
+import youtubeday1 from "../../Assets/img/youtubeday1.webp";
+import youtubeday2 from "../../Assets/img/youtubeday2.webp";
+import youtubeday3 from "../../Assets/img/youtubeday3.webp";
 
 const VideoSection = () => {
   const videos = [
     {
-      thumbnail: "/path/to/video1-thumbnail.jpg", // Replace with the actual path
+      thumbnail: youtubeday1, // Replace with the actual path
       alt: "Video 1",
     },
     {
-      thumbnail: "/path/to/video2-thumbnail.jpg", // Replace with the actual path
+      thumbnail: youtubeday2, // Replace with the actual path
       alt: "Video 2",
     },
     {
-      thumbnail: "/path/to/video3-thumbnail.jpg", // Replace with the actual path
+      thumbnail: youtubeday3, // Replace with the actual path
       alt: "Video 3",
     },
   ];
@@ -59,6 +62,7 @@ const VideoSection = () => {
             <path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z" />
           </svg>
           Download the 2024 Post share Brochure
+
         </button>
       </div>
     </div>
